@@ -1,0 +1,72 @@
+.skillsContainer {
+  width: 100%;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skillCard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  margin-bottom: 20px;
+}
+
+.cardHeader h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+.tag {
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.progressContainer {
+  margin-top: auto;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}

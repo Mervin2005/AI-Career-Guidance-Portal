@@ -1,0 +1,150 @@
+.overviewContainer {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.intro {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rightColumn {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.contentCard {
+  padding: 24px;
+}
+
+.contentCard h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.icon {
+  color: var(--accent-color);
+}
+
+.contentCard p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.responsibilityList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.responsibilityList li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.responsibilityList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.statCard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.statIcon {
+  color: var(--accent-color);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 6px;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.statCard h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.statCard p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.opportunitiesCard {
+  padding: 24px;
+}
+
+.opportunitiesCard h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.tagGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.roleTag {
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  transition: all 0.2s;
+}
+
+.roleTag:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,141 @@
+.rpContainer {
+  width: 100%;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.column h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.cardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resourceCard {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  text-decoration: none;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.resourceCard:hover {
+  transform: translateX(4px);
+  border-color: var(--accent-color);
+}
+
+.resIcon {
+  color: var(--accent-color);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.resInfo {
+  flex: 1;
+}
+
+.resInfo h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.resInfo span {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.externalIcon {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.resourceCard:hover .externalIcon {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+.projectCard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.projHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projHeader h4 {
+  font-size: 1.125rem;
+  margin-right: 12px;
+}
+
+.difficulty {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.difficulty.beginner { background: rgba(52, 211, 153, 0.2); color: #059669; }
+.difficulty.intermediate { background: rgba(96, 165, 250, 0.2); color: #2563eb; }
+.difficulty.advanced { background: rgba(167, 139, 250, 0.2); color: #7c3aed; }
+
+.projectCard p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.projMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 12px;
+}
+
+.projMeta > span {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.projTechs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techTag {
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}

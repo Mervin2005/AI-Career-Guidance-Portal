@@ -1,0 +1,149 @@
+.gapContainer {
+  max-width: 800px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.selectionArea {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag {
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tag:hover {
+  border-color: var(--accent-color);
+}
+
+.tag.selected {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+.analyzeBtn {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.analyzeBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.resultArea {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.scoreSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.scoreCircle {
+  width: 120px;
+  height: 120px;
+}
+
+.circularChart {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circleBg {
+  fill: none;
+  stroke: var(--glass-border);
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke: var(--accent-color);
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% { stroke-dasharray: 0 100; }
+}
+
+.percentage {
+  fill: var(--text-primary);
+  font-size: 0.5em;
+  text-anchor: middle;
+  font-weight: 700;
+}
+
+.scoreInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.scoreInfo p {
+  color: var(--text-secondary);
+}
+
+.recommendationBox {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.recommendationBox h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+.missingSkillsBox h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ef4444;
+  margin-bottom: 16px;
+}
+
+.missingTag {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+}
+
+.resetBtn {
+  align-self: flex-start;
+  margin-top: 10px;
+}

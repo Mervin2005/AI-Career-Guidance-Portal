@@ -1,0 +1,61 @@
+.companiesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.companyCard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--accent);
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.tagsArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.companyTag {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.companyTag:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: white;
+}

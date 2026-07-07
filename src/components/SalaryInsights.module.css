@@ -1,0 +1,67 @@
+.salaryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.chartArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.salaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--accent);
+}
+
+.experienceLevel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.experienceLevel h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.icon {
+  color: var(--accent);
+}
+
+.salaryRange {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rupeeIcon {
+  color: var(--text-secondary);
+  width: 18px;
+  height: 18px;
+}
+
+.amount {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #10b981; /* green color for money */
+}
+
+@media (max-width: 640px) {
+  .salaryRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
